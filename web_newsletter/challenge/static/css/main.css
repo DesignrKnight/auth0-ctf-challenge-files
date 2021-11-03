@@ -1,0 +1,221 @@
+@import url(//rsms.me/inter/inter-ui.css);
+
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter UI', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.titan-background {
+  position: absolute;
+  width: 100%;
+  background-image: linear-gradient(-180deg, #f2f0f0 0%, #375e6a 100%);
+  overflow: hidden;
+  z-index: 1;
+  top: -10%;
+  height: 120%;
+  min-height: 120vh;
+  margin-bottom: -20%;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  width: 300vw;
+  height: 100vh;
+  transform: translate(0%, 0%);
+  background-size: contain;
+  background-repeat: repeat;
+  transform-origin: top left;
+}
+
+.stars-L {
+  background-image: url('/static/css/assets/stars-L.svg');
+  background-size: 890px;
+  height: 750px;
+  animation: panning-stars 200s linear infinite alternate;
+}
+
+.stars-M {
+  background-image: url('/static/css/assets/stars-M.svg');
+  height: 530px;
+  animation: panning-stars 300s linear infinite alternate;
+}
+
+.stars-S {
+  background-image: url('/static/css/assets/stars-S.svg');
+  height: 370px;
+  animation: panning-stars 400s linear infinite alternate;
+}
+
+@keyframes panning-stars {
+  from {
+    transform: translate(-20%, 0%);
+  }
+  to {
+    transform: translate(-80%, -40%);
+  }
+}
+
+.marvellous-container {
+  position: relative;
+  z-index: 2;
+  padding: 104px 0 24px 0;
+  width: 95%;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  display: block;
+  font-size: 60px;
+  margin: 0 0 24px 0;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 16vw;
+  }
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 24px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+b {
+  color: #ff1744;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.title-marvel {
+  font-weight: bolder;
+  color: #4a464f;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  /*! padding: 0 16px; */
+  /*! background: #fdfaff; */
+}
+
+.title-studios {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: #4a464f;
+  letter-spacing: -4.5px;
+  text-transform: uppercase;
+  padding: 0 16px;
+  border-color: #4a464f;
+  /*! border-top: 8px solid; */
+  /*! border-bottom: 8px solid; */
+  line-height: 1;
+  font-style: italic;
+}
+
+input[type='text']{
+    background-color: transparent;
+    border: solid 1px #6E6E6E;
+    color: #1c1c1c;
+}
+
+input, button {
+  font: inherit;
+  border: 0;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column: 2;
+}
+
+input {
+  padding: 0.5em 0.75em;
+}
+
+button {
+  padding: 0.5em 0.75em;
+  background: #8fef9f;
+}
+
+.header {
+  margin-bottom: 104px;
+}
+
+.wrap {
+  position: absolute;
+  top: 107%;
+  left: 46%;
+  right: 0;
+  bottom: 0;
+}
+
+
+@-webkit-keyframes wave {
+  0% {
+    box-shadow: 0em 2em #333333, 0em 3em #333333, 0em 4em #FEBE5F;
+  }
+  5% {
+    box-shadow: 0em 2em #333333, -1em 3em #333333, -2em 4em #FEBE5F;
+  }
+  7.5% {
+    box-shadow: 0em 2em #333333, -1em 2em #333333, -2em 2em #FEBE5F;
+  }
+  10% {
+    box-shadow: 0em 2em #333333, -1em 1em #333333, -2em 0 #FEBE5F;
+  }
+  25% {
+    box-shadow: 0em 2em #333333, -1em 1em #333333, -3em 0 #FEBE5F;
+  }
+  26% {
+    box-shadow: 0em 2em #333333, -1em 1em #333333, -2em 0 #FEBE5F;
+  }
+  27% {
+    box-shadow: 0em 2em #333333, -1em 1em #333333, -3em 0 #FEBE5F;
+  }
+  28% {
+    box-shadow: 0em 2em #333333, -1em 1em #333333, -2em 0 #FEBE5F;
+  }
+  40% {
+    box-shadow: 0em 2em #333333, -1em 2em #333333, -2em 2em #FEBE5F;
+  }
+  42.5% {
+    box-shadow: 0em 2em #333333, -1em 3em #333333, -2em 4em #FEBE5F;
+  }
+  45% {
+    box-shadow: 0em 2em #333333, 0em 3em #333333, 0em 4em #FEBE5F;
+  }
+  100% {
+    box-shadow: 0em 2em #333333, 0em 3em #333333, 0em 4em #FEBE5F;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    box-shadow: 0em -4em #333333, 2em -4em #333333;
+  }
+  80% {
+    box-shadow: 0em -4em #BE8E46, 2em -4em #BE8E46;
+  }
+  82.5% {
+    box-shadow: 0em -4em #333333, 2em -4em #333333;
+  }
+}

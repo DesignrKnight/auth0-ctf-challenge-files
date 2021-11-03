@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Temp Notes</title>
+        <link rel="icon" href="/static/images/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+    </head>
+    <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Temp Note</a><i>A disposable Note App</i>
+        <div class="" id="navbarColor02">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit" onclick="deleteAcc()">New Account</button>
+        </div>
+      </div>
+    </nav>
+
+
+
+<div class="alert alert-info">
+ Logged in as <strong>({{ username }})</strong>, this account will be disposed in 3 days..
+</div>
+
+<div class="container">
+    <div class="card sm-3">
+      <h3 class="card-header">Add Note</h3>
+      <div class="card-body" id="titleSr">
+        <input type="text" class="form-control" placeholder="Title" id="note_title">
+        <textarea class="form-control" id="note_content" rows="3" placeholder="Note"></textarea>
+      </div>
+      <div class="card-footer text-muted">
+        <button class="btn btn-primary" id="add-btn">Add</button> 
+        <span class="alert alert-primary" id="resp-msg"> Oh snap! try submitting again. </span>
+
+      </div>
+    </div>
+</div>
+
+
+<div class="container">
+  <div class="d-flex flex-row bd-highlight mb-3" style="flex-wrap: wrap;" id="notesContainer">
+    
+  </div>
+</div>
+
+
+    </body>
+    <script type="text/javascript" src="/static/js/jquery-3.6.0.slim.min.js"></script>
+    <script type="text/javascript" src="/static/js/form.js"></script>
+</html>
